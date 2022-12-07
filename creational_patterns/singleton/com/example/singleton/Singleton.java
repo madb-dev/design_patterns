@@ -2,7 +2,6 @@ package com.example.singleton;
 
 public class Singleton {
     private static Singleton INSTANCE;
-    private String info = "Initial info class";
 
     private Singleton() {
     }
