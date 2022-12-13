@@ -16,7 +16,7 @@ public class Dimension {
     this.coordinates = new int[]{x, y, z};
   }
 
-  public int[] getCoordinates(){
+  public int[] getCoordinates() {
     return this.coordinates;
   }
 }

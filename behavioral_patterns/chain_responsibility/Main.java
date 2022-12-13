@@ -1,8 +1,8 @@
 import com.example.Dimension;
 import com.example.OneDimension;
+import com.example.ThreeDimension;
 import com.example.TwoCoordinates;
 import com.example.handler.HandlerDimension;
-import com.example.ThreeDimension;
 
 public class Main {
 
