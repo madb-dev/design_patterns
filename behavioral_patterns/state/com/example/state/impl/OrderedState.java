@@ -3,25 +3,25 @@ package com.example.state.impl;
 import com.example.context.Package;
 import com.example.state.PackageState;
 
-public class ReceivedStatus implements PackageState {
+public class OrderedState implements PackageState {
 
   @Override
   public void next(Package pack) {
-    System.out.println("The package is already received.");
+    pack.setState(new DeliveredState());
   }
 
   @Override
   public void prev(Package pack) {
-    pack.setState(new DeliveredStatus());
+    System.out.println("no previous state, the package is ordered.");
   }
 
   @Override
   public void printStatus() {
-    System.out.println("Package status: received");
+    System.out.println("Package status: ordered");
   }
 
   @Override
   public String toString() {
-    return "ReceivedState{}";
+    return "OrderedState{}";
   }
 }

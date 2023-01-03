@@ -1,12 +1,11 @@
 package com.example.context;
 
 import com.example.state.PackageState;
-import com.example.state.impl.OrderedStatus;
-import com.sun.org.apache.xpath.internal.operations.Or;
+import com.example.state.impl.OrderedState;
 
 public class Package {
 
-  private PackageState state = new OrderedStatus();
+  private PackageState state = new OrderedState();
 
   public PackageState getState() {
     return state;
